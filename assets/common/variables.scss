@@ -1,0 +1,19 @@
+// Colors
+:root {
+  --black-primary: #071435;
+  --brand-primary: #fc9003;
+  --brand-hover: #fc7b03;
+  --special-white: #FFF;
+}
+
+// Media
+$mobile375: "only screen and (max-width: 375px)";
+$mobile: "only screen and (max-width: 767px)";
+$noMobile: "only screen and (min-width: 768px)";
+$tablet: "only screen and (min-width: 768px) and (max-width: 1023px)";
+$desktop: "only screen and (min-width: 1024px)";
+$noDesktop: "only screen and (max-width: 1023px)";
+$mediumDesktop: "only screen and (min-width: 1200px)";
+$noMediumDesktop: "only screen and (max-width: 1199px)";
+$largeDesktop: "only screen and (min-width: 1440px)";
+$noLargeDesktop: "only screen and (max-width: 1439px)";

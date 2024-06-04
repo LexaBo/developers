@@ -1,0 +1,28 @@
+@import "@hennge/vue3-pagination/dist/vue3-pagination.css";
+
+.Pagination {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem .5rem 2rem;
+
+  @media #{$mobile} {
+    justify-content: center;
+  }
+
+  .Page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.2rem;
+    height: 4.2rem;
+    padding: .5rem;
+    color: var(--black-primary);
+    text-decoration: none;
+    border-radius: 50%;
+
+    &.Page-active {
+      background-color: var(--brand-primary) !important;
+      color: var(--special-white);
+    }
+  }
+}

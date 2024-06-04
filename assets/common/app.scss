@@ -1,0 +1,42 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  color: var(--black-primary);
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.default {
+  position: relative;
+  max-width: 144rem;
+  margin: 0 auto;
+
+  .back-home-on-page & {
+    padding-top: 4rem;
+  }
+}

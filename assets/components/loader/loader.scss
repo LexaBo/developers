@@ -1,0 +1,18 @@
+.loader {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+
+  @media #{$noDesktop} {
+    top: 70%;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  @media #{$desktop} {
+    top: 50%;
+    width: 20rem;
+    height: 20rem;
+  }
+}

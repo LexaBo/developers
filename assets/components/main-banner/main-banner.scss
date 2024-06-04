@@ -1,0 +1,18 @@
+.main-banner {
+  padding: 2rem 1rem;
+
+  @media #{$mobile} {
+    min-height: 14.7rem;
+  }
+
+  @media #{$noMobile} {
+    min-height: 30.1rem;
+  }
+
+  &__img {
+    display: block;
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

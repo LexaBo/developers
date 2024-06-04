@@ -1,0 +1,36 @@
+.main-page {
+  width: 100%;
+
+  @media #{$mobile} {
+    padding: 3rem 2rem;
+  }
+
+  @media #{$noMobile} {
+    padding: 5rem 2rem;
+  }
+
+  &__columns {
+    @media #{$noMobile} {
+      display: grid;
+      grid-template-columns: 25rem 1fr;
+    }
+
+    @media #{$tablet} {
+      grid-column-gap: 3rem;
+    }
+
+    @media #{$desktop} {
+      grid-column-gap: 5rem;
+    }
+  }
+
+  &__column {
+    @media #{$noDesktop} {
+    margin-bottom: 3rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
