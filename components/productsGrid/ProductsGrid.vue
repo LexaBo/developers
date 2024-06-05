@@ -49,8 +49,10 @@ export default defineComponent({
   },
   setup() {
     const productsGridStore = useProductsGridStore();
+    const filterStore = useFilterStore();
+    const {fetchProducts, setProductsActivePage} = productsGridStore;
     const {activePageNumber, totalPage, products} = toRefs(productsGridStore);
-    const {filtersType} = toRefs(useFilterStore());
+    const {filtersType} = toRefs(filterStore);
     const isLoading = computed(() => productsGridStore.productsLoadingStatus === 'loading');
     const isLoaded = computed(() => productsGridStore.productsLoadingStatus === 'loaded');
     const activePage = activePageNumber;
@@ -60,7 +62,8 @@ export default defineComponent({
     }
 
     watch([filtersType], () => {
-      productsGridStore.fetchProducts();
+      fetchProducts();
+      setProductsActivePage(1);
     }, {immediate: true})
 
     return {
