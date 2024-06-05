@@ -59,7 +59,7 @@ export default defineComponent({
       productsGridStore.setProductsActivePage(unref(activePage));
     }
 
-    watch([filtersType, activePage], () => {
+    watch([filtersType], () => {
       productsGridStore.fetchProducts();
     }, {immediate: true})
 
